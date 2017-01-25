@@ -1,0 +1,179 @@
+@import "compass/css3";
+
+/*----------  Animation loader 1  ----------*/
+
+@keyframes translate {
+	0%, 100% {
+		@include transform(translateY(0px));
+	}
+	50% {
+		@include transform(translateY(20px));
+	}
+}
+
+/*----------  Animation loader 2  ----------*/
+
+
+@keyframes scaler {
+	0%,100% {
+		@include transform(scale(0));
+		@include opacity(1);
+	}
+
+	50% {
+		@include transform(scale(1));
+		@include opacity(0.3);
+	}
+}
+
+@keyframes scaler-bis {
+	0%,100% {
+		@include transform(scale(0));
+		@include opacity(0.3);			}
+
+	50% {
+		@include transform(scale(1));
+		@include opacity(0.8);
+	}
+}
+
+/*----------  Animation loader 3  ----------*/
+
+@keyframes scale-rotate {
+	0% {
+		@include transform(rotate(0deg) scale(1));
+	}
+	50% {
+		@include transform(rotate(30deg) scale(1.1));
+	}
+	100% {
+		@include transform(rotate(360deg) scale(1));
+	}
+}
+
+/*----------  Animation loader 4 & 5 ----------*/
+
+@keyframes time {
+	0% {
+		@include transform(rotate(0deg));
+	}
+	100% {
+		@include transform(rotate(360deg));
+	}
+}
+
+/*----------  Animation loader 6  ----------*/
+
+@keyframes updown {
+	0%, 100% {
+		@include transform(translateY(0%));
+	}
+	50% {
+		@include transform(translateY(-80%));
+	}
+}
+
+/*----------  Animation loader 7  ----------*/
+
+@keyframes square {
+	0%, 100% {
+		@include border-radius(50%);
+		width: 100px;
+		height: 100px;
+	}
+	30% { 
+		@include transform(scale(0.1)); 
+	}
+	50% { 
+		@include border-radius(80%); 
+	}
+}
+
+/*----------  Animation loader 8  ----------*/
+
+@keyframes bar_anim {
+	0%{
+		@include transform(scaleY(0)); 
+		@include opacity(1);
+	}
+	50% {
+		@include transform(scaleY(1)); 
+		@include opacity(0.4);
+	}
+	100%{
+		@include transform(scaleY(0)); 
+		@include opacity(1);
+	}
+}
+
+/*----------  Animation loader 9  ----------*/
+
+@keyframes rotation {
+	0% {
+		@include transform(rotate(0deg));
+	}
+	100% {
+		@include transform(rotate(360deg));
+	}
+}
+
+/*----------  Animation loader 10  ----------*/
+
+@keyframes grow {
+	0% {
+		@include transform(scale(0));
+	}
+	40% {
+		@include opacity(1);
+	}
+	100% {
+		@include transform(scale(1));
+		@include opacity(0);
+	}
+}
+
+/*----------  Animation loader 11  ----------*/
+
+@keyframes grow_barre {
+	0% {
+		width: 0%;
+	}
+	30% {
+		width: 10%;
+	}
+	100% {
+		width: 100%;
+	}
+}
+
+/*----------  Animation loader 12 ----------*/
+
+@keyframes rotation {
+	0% {
+		@include transform(rotate(0deg));
+	}
+	100% {
+		@include transform(rotate(360deg));
+	}
+}
+
+/*----------  Animation loader 13  ----------*/
+
+@keyframes moving {
+	0%, 100%{
+		left: 0;
+		top: 0;
+	}
+	25% {
+		left: 90px;
+		top: 0;
+	}
+	50% {
+		left: 90px;
+		top: 90px;
+	}
+	75% {
+		left: 0;
+		top: 90px;
+	}
+}

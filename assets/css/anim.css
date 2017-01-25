@@ -1,0 +1,233 @@
+/*----------  Animation loader 1  ----------*/
+@keyframes translate {
+  0%, 100% {
+    -moz-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+  }
+  50% {
+    -moz-transform: translateY(20px);
+    -ms-transform: translateY(20px);
+    -webkit-transform: translateY(20px);
+    transform: translateY(20px);
+  }
+}
+/*----------  Animation loader 2  ----------*/
+@keyframes scaler {
+  0%,100% {
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+    opacity: 1;
+  }
+  50% {
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=30);
+    opacity: 0.3;
+  }
+}
+@keyframes scaler-bis {
+  0%,100% {
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=30);
+    opacity: 0.3;
+  }
+  50% {
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+    opacity: 0.8;
+  }
+}
+/*----------  Animation loader 3  ----------*/
+@keyframes scale-rotate {
+  0% {
+    -moz-transform: rotate(0deg) scale(1);
+    -ms-transform: rotate(0deg) scale(1);
+    -webkit-transform: rotate(0deg) scale(1);
+    transform: rotate(0deg) scale(1);
+  }
+  50% {
+    -moz-transform: rotate(30deg) scale(1.1);
+    -ms-transform: rotate(30deg) scale(1.1);
+    -webkit-transform: rotate(30deg) scale(1.1);
+    transform: rotate(30deg) scale(1.1);
+  }
+  100% {
+    -moz-transform: rotate(360deg) scale(1);
+    -ms-transform: rotate(360deg) scale(1);
+    -webkit-transform: rotate(360deg) scale(1);
+    transform: rotate(360deg) scale(1);
+  }
+}
+/*----------  Animation loader 4 & 5 ----------*/
+@keyframes time {
+  0% {
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+/*----------  Animation loader 6  ----------*/
+@keyframes updown {
+  0%, 100% {
+    -moz-transform: translateY(0%);
+    -ms-transform: translateY(0%);
+    -webkit-transform: translateY(0%);
+    transform: translateY(0%);
+  }
+  50% {
+    -moz-transform: translateY(-80%);
+    -ms-transform: translateY(-80%);
+    -webkit-transform: translateY(-80%);
+    transform: translateY(-80%);
+  }
+}
+/*----------  Animation loader 7  ----------*/
+@keyframes square {
+  0%, 100% {
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+  }
+  30% {
+    -moz-transform: scale(0.1);
+    -ms-transform: scale(0.1);
+    -webkit-transform: scale(0.1);
+    transform: scale(0.1);
+  }
+  50% {
+    -moz-border-radius: 80%;
+    -webkit-border-radius: 80%;
+    border-radius: 80%;
+  }
+}
+/*----------  Animation loader 8  ----------*/
+@keyframes bar_anim {
+  0% {
+    -moz-transform: scaleY(0);
+    -ms-transform: scaleY(0);
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+    opacity: 1;
+  }
+  50% {
+    -moz-transform: scaleY(1);
+    -ms-transform: scaleY(1);
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=40);
+    opacity: 0.4;
+  }
+  100% {
+    -moz-transform: scaleY(0);
+    -ms-transform: scaleY(0);
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+    opacity: 1;
+  }
+}
+/*----------  Animation loader 9  ----------*/
+@keyframes rotation {
+  0% {
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+/*----------  Animation loader 10  ----------*/
+@keyframes grow {
+  0% {
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+  40% {
+    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+    opacity: 1;
+  }
+  100% {
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0;
+  }
+}
+/*----------  Animation loader 11  ----------*/
+@keyframes grow_barre {
+  0% {
+    width: 0%;
+  }
+  30% {
+    width: 10%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+/*----------  Animation loader 12 ----------*/
+@keyframes rotation {
+  0% {
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+/*----------  Animation loader 13  ----------*/
+@keyframes moving {
+  0%, 100% {
+    left: 0;
+    top: 0;
+  }
+  25% {
+    left: 90px;
+    top: 0;
+  }
+  50% {
+    left: 90px;
+    top: 90px;
+  }
+  75% {
+    left: 0;
+    top: 90px;
+  }
+}
